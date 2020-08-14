@@ -44,11 +44,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <!--                <com.google.android.material.textfield.TextInputEditText-->
+                <!--                    android:id="@+id/amount_transfer"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="Amount" />-->
+                <EditText
                     android:id="@+id/amount_transfer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Amount" />
+                    android:hint="Amount"
+                    android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
@@ -61,5 +67,6 @@
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

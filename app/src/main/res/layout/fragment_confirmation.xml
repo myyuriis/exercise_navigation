@@ -25,17 +25,63 @@
         android:layout_gravity="center_vertical"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="TRANSFER SUCCESS"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_baseline_check_circle_24" />
 
+        <TextView
+            android:id="@+id/amount_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. "
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sent_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipient name"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank name"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/account_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account number: "
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
         <com.google.android.material.button.MaterialButton
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="30dp"
             android:text="DONE">
 
         </com.google.android.material.button.MaterialButton>

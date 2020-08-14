@@ -34,12 +34,13 @@
                 app:boxCornerRadiusTopStart="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <Spinner
+                    android:id="@+id/dropdown_bank"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:prompt="@string/bank_prompt"
-                    android:entries="@array/bank_arrays">
-                </Spinner>
+                    android:entries="@array/bank_arrays"
+                    android:prompt="@string/bank_prompt"></Spinner>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -47,11 +48,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp">
-                <com.google.android.material.textfield.TextInputEditText
+                <!--                <com.google.android.material.textfield.TextInputEditText-->
+                <!--                    android:id="@+id/recipient_account_text"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:hint="Account Number"/>-->
+                <EditText
                     android:id="@+id/recipient_account_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Account Number"/>
+                    android:inputType="number"
+                    android:hint="Account Number" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -76,5 +83,6 @@
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
