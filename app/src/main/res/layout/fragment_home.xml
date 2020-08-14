@@ -11,25 +11,26 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
-        android:layout_margin="5dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="15dp"
         android:layout_height="200dp"
+        android:layout_margin="5dp"
         app:cardBackgroundColor="@android:color/holo_blue_bright"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_gravity="center"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/profile_pict_view"
-                android:layout_gravity="center"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_baseline_account_box_24" />
 
             <TextView
@@ -56,7 +57,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/transfer_button"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="@android:color/holo_red_dark"
             android:text="Transfer"
@@ -66,7 +67,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/transaction_history_button"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="History Transaction"
             app:backgroundTint="@android:color/holo_orange_light"
@@ -76,12 +77,19 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/balance_button"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="@android:color/holo_green_light"
             android:text="Balance"
             app:cardElevation="10dp"
             app:cornerRadius="15dp" />
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="SHARE" />
 
     </LinearLayout>
 
